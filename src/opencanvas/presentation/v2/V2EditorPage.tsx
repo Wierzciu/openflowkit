@@ -257,7 +257,7 @@ export function V2EditorPage({ shared }: { readonly shared?: V2SharedView } = {}
   });
   useV2VisibleSelection(page, selection, applySelection);
   useV2StartIntent({
-    startIntent, pathname: location.pathname, shared, load, page, session, repo, code, commit, openWorkspace, setActivePageId, pushToast,
+    startIntent, pathname: location.pathname, shared, load, page, repo, code, openWorkspace, setActivePageId, pushToast,
   });
 
   const { status: saveStatus, retry: retrySave } = useV2Autosave({
